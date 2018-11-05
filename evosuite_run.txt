@@ -1,0 +1,96 @@
+* EvoSuite 1.0.6
+* Analyzing classpath (generating inheritance tree)
+  - target/classes
+  - library_dependencies/akka-actor_2.12-2.5.12.jar
+  - library_dependencies/akka-testkit_2.12-2.5.12.jar
+  - library_dependencies/config-1.3.2.jar
+  - library_dependencies/scala-java8-compat_2.12-0.8.0.jar
+  - library_dependencies/scala-library-2.12.5.jar
+* Found 3 matching classes for prefix com.lightbend.akka.sample
+* Current class: com.lightbend.akka.sample.Printer
+* Going to generate test cases for class: com.lightbend.akka.sample.Printer
+* Starting client
+* Connecting to master process on port 19808
+* Analyzing classpath: 
+* Inheritance tree loaded from /tmp/ES_inheritancetree1122696071657490723.xml.gz
+* Error while initializing target class: String index out of range: 18
+[MASTER] 22:54:34.733 [logback-2] ERROR TestSuiteGenerator - Problem for com.lightbend.akka.sample.Printer. Full stack:
+java.lang.StringIndexOutOfBoundsException: String index out of range: 18
+	at java.lang.String.charAt(String.java:658) ~[na:1.8.0_191]
+	at org.evosuite.setup.TestClusterUtils.isAnonymousClass(TestClusterUtils.java:97) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.ConcreteClassAnalyzer.getConcreteClassesImpl(ConcreteClassAnalyzer.java:123) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.ConcreteClassAnalyzer.getConcreteClasses(ConcreteClassAnalyzer.java:61) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.addDependency(TestClusterGenerator.java:878) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.addDependencies(TestClusterGenerator.java:789) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.initializeTargetMethods(TestClusterGenerator.java:546) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:134) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.initializeTargetClass(TestSuiteGenerator.java:110) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:130) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite-1.0.6.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_191]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+* Computation finished
+[MASTER] 22:54:34.865 [main] ERROR SearchStatistics - No statistics has been saved because EvoSuite failed to generate any test case
+[MASTER] 22:54:34.966 [main] ERROR TestGeneration - failed to write statistics data
+* Current class: com.lightbend.akka.sample.Greeter
+* Going to generate test cases for class: com.lightbend.akka.sample.Greeter
+* Starting client
+* Connecting to master process on port 19935
+* Analyzing classpath: 
+* Inheritance tree loaded from /tmp/ES_inheritancetree1122696071657490723.xml.gz
+* Error while initializing target class: String index out of range: 18
+[MASTER] 22:54:37.133 [logback-2] ERROR TestSuiteGenerator - Problem for com.lightbend.akka.sample.Greeter. Full stack:
+java.lang.StringIndexOutOfBoundsException: String index out of range: 18
+	at java.lang.String.charAt(String.java:658) ~[na:1.8.0_191]
+	at org.evosuite.setup.TestClusterUtils.isAnonymousClass(TestClusterUtils.java:97) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.ConcreteClassAnalyzer.getConcreteClassesImpl(ConcreteClassAnalyzer.java:123) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.ConcreteClassAnalyzer.getConcreteClasses(ConcreteClassAnalyzer.java:61) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.addDependency(TestClusterGenerator.java:878) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.addCastClassDependencyIfAccessible(TestClusterGenerator.java:313) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.handleCastClasses(TestClusterGenerator.java:249) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:131) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.initializeTargetClass(TestSuiteGenerator.java:110) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:130) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite-1.0.6.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_191]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+* Computation finished
+[MASTER] 22:54:37.245 [main] ERROR SearchStatistics - No statistics has been saved because EvoSuite failed to generate any test case
+[MASTER] 22:54:37.345 [main] ERROR TestGeneration - failed to write statistics data
+* Current class: com.lightbend.akka.sample.AkkaQuickstart
+* Going to generate test cases for class: com.lightbend.akka.sample.AkkaQuickstart
+* Starting client
+* Connecting to master process on port 18465
+* Analyzing classpath: 
+* Inheritance tree loaded from /tmp/ES_inheritancetree1122696071657490723.xml.gz
+* Error while initializing target class: String index out of range: 23
+[MASTER] 22:54:39.667 [logback-2] ERROR TestSuiteGenerator - Problem for com.lightbend.akka.sample.AkkaQuickstart. Full stack:
+java.lang.StringIndexOutOfBoundsException: String index out of range: 23
+	at java.lang.String.charAt(String.java:658) ~[na:1.8.0_191]
+	at org.evosuite.setup.TestClusterUtils.isAnonymousClass(TestClusterUtils.java:97) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.TestUsageChecker.canUse(TestUsageChecker.java:199) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.initializeTargetMethods(TestClusterGenerator.java:675) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:134) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.initializeTargetClass(TestSuiteGenerator.java:110) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:130) ~[evosuite-1.0.6.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite-1.0.6.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_191]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+* Computation finished
+[MASTER] 22:54:39.779 [main] ERROR SearchStatistics - No statistics has been saved because EvoSuite failed to generate any test case
+[MASTER] 22:54:39.880 [main] ERROR TestGeneration - failed to write statistics data
